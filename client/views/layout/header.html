@@ -1,0 +1,19 @@
+<template name="Header">
+
+  {{#ionHeaderBar alignTitle='center'}}
+    <div class="bar bar-header bar-dark">
+      <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+        {{#if isAndroid}}
+          {{> ionIcon icon='android-more-vertical'}}
+        {{else}}
+          {{> ionIcon icon='navicon'}}
+        {{/if}}
+      </button>
+
+      <div class="logo-wrapper">
+        <a href="/"><img class="logo" src="/images/meteor-logo.svg" alt="Meteor"></a>
+      </div>
+    </div>
+  {{/ionHeaderBar}}
+
+</template>

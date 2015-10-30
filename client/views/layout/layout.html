@@ -1,0 +1,39 @@
+<template name="Layout">
+
+  {{#ionBody}}
+
+    {{#ionSideMenuContainer side="left"}}
+
+      {{> Sidebar}}
+
+      {{#ionSideMenuContent}}
+
+        {{#unless isLogin}}
+          {{> Header}}
+        {{/unless}}
+
+        {{#ionNavView}}
+          {{> yield}}
+        {{/ionNavView}}
+
+      {{/ionSideMenuContent}}
+
+    {{/ionSideMenuContainer}}
+
+  {{/ionBody}}
+
+  {{#contentFor "headerButtonLeft"}}
+    <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+      {{#if isAndroid}}
+        {{> ionIcon icon='android-more-vertical'}}
+      {{else}}
+        {{> ionIcon icon='navicon'}}
+      {{/if}}
+    </button>
+  {{/contentFor}}
+
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">TTI</h1>
+  {{/contentFor}}
+
+</template>
