@@ -6,12 +6,12 @@
 
         {{#ionList}}
           {{#if Template.subscriptionsReady}}
-            <!-- {{#each articles}} -->
+            {{#each articles}}
               {{#ionItem class="row" iconRight=true}}
-                {{articles}}
+                {{title}}
                 {{> ionIcon icon="ios-arrow-right" class="assertive"}}
               {{/ionItem}}
-            <!-- {{/each}} -->
+            {{/each}}
           {{/if}}
         {{/ionList}}
 

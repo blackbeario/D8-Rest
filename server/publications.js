@@ -1,5 +1,3 @@
-	// Meteor.methods({
-//   'getArticles':function(){
-//     Articles.find({});
-//   }
-// })
+Meteor.publish('articles', function() {
+	return Articles.find();
+});
