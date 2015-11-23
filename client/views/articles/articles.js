@@ -7,11 +7,3 @@ Template.Articles.helpers({
     return Articles.find();
   }
 });
-
-// Template.title.helpers({
-//   articles:function(){
-//     return Articles.find({}, {fields: {
-//       title: true
-//     }});
-//   }
-// });

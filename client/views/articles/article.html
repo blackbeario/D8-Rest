@@ -1,0 +1,18 @@
+<template name="Article">
+  {{#ionView}}
+    {{#ionContent class="padding"}}
+      {{>ionNavBackButton}}
+
+        <h1>{{title}}</h1>
+        <i>{{author}}</i>
+        {{body}}
+
+    {{/ionContent}}
+  {{/ionView}}
+
+  {{#ionTabs class="tabs-positive tabs-icon-top"}}
+  {{> ionTab title="Articles" path="articles" iconOff="ios-paper" iconOn="ios-paper"}}
+    {{> ionTab title="Fav" path="favorites" iconOff="ios-heart-outline" iconOn="ios-heart"}}
+    {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear-outline"}}
+  {{/ionTabs}}
+</template>

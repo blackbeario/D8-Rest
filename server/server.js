@@ -4,8 +4,8 @@ articlesUrl = 'http://d8.jfraz/articles/rest';
 
 Meteor.startup(function() {
   fetchArticles();
-  // Check for new articles every 60 seconds.
-  Meteor.setInterval(fetchArticles, 60000);
+  // Check for new articles every 30 seconds.
+  Meteor.setInterval(fetchArticles, 30000);
 });
 
 fetchArticles = function() {
@@ -33,7 +33,8 @@ fetchArticles = function() {
           results.push(Articles.insert({
             nid: node.nid,
             title: node.title,
-            body: node.body
+            body: node.body,
+            author: node.name
           }));
         } else {
           results.push(void 0);

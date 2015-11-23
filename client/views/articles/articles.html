@@ -8,7 +8,7 @@
           {{#if Template.subscriptionsReady}}
             {{#each articles}}
               {{#ionItem class="row" iconRight=true}}
-                {{title}}
+                <h2><a href="{{pathFor 'article'}}">{{title}}</a></h2>
                 {{> ionIcon icon="ios-arrow-right" class="assertive"}}
               {{/ionItem}}
             {{/each}}
@@ -17,4 +17,9 @@
 
     {{/ionContent}}
   {{/ionView}}
+
+  {{#ionTabs class="tabs-positive tabs-icon-top"}}
+    {{> ionTab title="Home" path="home" iconOff="ios-home" iconOn="ios-home"}}
+    {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear-outline"}}
+  {{/ionTabs}}
 </template>
