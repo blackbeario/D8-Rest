@@ -2,12 +2,12 @@
   {{#ionView}}
     {{#ionContent}}
 
-      <h1>Articles</h1>
+      <h1 class="padding">Articles</h1>
 
         {{#ionList}}
           {{#if Template.subscriptionsReady}}
             {{#each articles}}
-              {{#ionItem class="row" iconRight=true}}
+              {{#ionItem class="padding" iconRight=true}}
                 <h2><a href="{{pathFor 'article'}}">{{title}}</a></h2>
                 {{> ionIcon icon="ios-arrow-right" class="assertive"}}
               {{/ionItem}}
