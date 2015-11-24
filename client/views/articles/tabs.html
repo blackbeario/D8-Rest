@@ -1,0 +1,21 @@
+<template name="Tabs">
+  {{#ionTabs class="tabs-icon"}}
+    {{> ionTab class="goart" title="Articles" path="articles" iconOff="ios-list-outline" iconOn="ios-list-outline"}}
+    {{> ionTab class="fav" title="Fav" path="favorites" iconOff="ios-heart-outline" iconOn="ios-heart"}}
+    {{> ionTab class="beer" title="Settings" path="settings" iconOff="ios-pint-outline" iconOn="ios-pint"}}
+  {{/ionTabs}}
+</template>
+
+<template name="ArticlesTabs">
+  {{#ionTabs class="tabs-icon"}}
+    {{> ionTab title="Home" path="home" iconOff="ios-home-outline" iconOn="ios-home-outline"}}
+    {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear-outline"}}
+  {{/ionTabs}}
+</template>
+
+<template name="HomeTabs">
+  {{#ionTabs class="tabs-icon"}}
+    {{> ionTab class="goart" title="Articles" path="articles" iconOff="ios-list-outline" iconOn="ios-list-outline"}}
+    {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear-outline"}}
+  {{/ionTabs}}
+</template>

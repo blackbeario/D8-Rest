@@ -8,13 +8,18 @@
 .has-header
   top: 68px
 
-.tabs-positive
-  .tabs
-    background-color: #444
-    border: none
+.tabs
+  background-color: #444
+  border: none
 
-.scroll-content
-  background: url(/images/meteor-bkg.jpg) no-repeat 50% 0
+  .tab-item .icon
+    color: #DE4F4F
+
+.scroll-content, .popup
+  background: url(/images/meteor-bgd.jpg) no-repeat 50% 0
+
+.popup-head
+  background: url(/images/meteor.svg) no-repeat 0 0
 
 body, h1, h2, h3, .ionic-body
   color: #ccc
@@ -26,3 +31,10 @@ body, h1, h2, h3, .ionic-body
   a
     color: #ccc
     text-decoration: none
+
+.popup-container .popup
+  background-color: #000
+  border: 1px solid #ccc
+
+.backdrop
+  background-color: rgba(0, 0, 0, 0.7)

@@ -18,8 +18,7 @@
     {{/ionContent}}
   {{/ionView}}
 
-  {{#ionTabs class="tabs-positive tabs-icon-top"}}
-    {{> ionTab title="Articles" path="articles" iconOff="ios-paper" iconOn="ios-paper"}}
-    {{> ionTab title="Settings" path="settings" iconOff="ios-gear-outline" iconOn="ios-gear-outline"}}
-  {{/ionTabs}}
+  {{#HomeTabs}}
+    {{> yield}}
+  {{/HomeTabs}}
 </template>
